@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\btlweb2\\btlweb2\\index\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|D:\\btlweb2\\btlweb2\\index\\index\\admin\\taikhoan.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\admin\\taikhoan.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "taikhoan.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\btlweb2\\index\\index\\admin\\taikhoan.aspx",
+              "RelativeDocumentMoniker": "index\\admin\\taikhoan.aspx",
+              "ToolTip": "D:\\btlweb2\\btlweb2\\index\\index\\admin\\taikhoan.aspx",
+              "RelativeToolTip": "index\\admin\\taikhoan.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-04T06:09:38.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
