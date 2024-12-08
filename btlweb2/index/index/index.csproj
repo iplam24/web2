@@ -204,7 +204,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="stylesheet\index.css" />
     <Content Include="stylesheet\TrangChu.css" />
-    <Content Include="trangchu.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="admin\admin.Master" />
     <Content Include="index.Master" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
@@ -369,12 +369,12 @@
     <Compile Include="quenmatkhau.aspx.designer.cs">
       <DependentUpon>quenmatkhau.aspx</DependentUpon>
     </Compile>
-    <Compile Include="trangchu.aspx.cs">
-      <DependentUpon>trangchu.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="trangchu.aspx.designer.cs">
-      <DependentUpon>trangchu.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

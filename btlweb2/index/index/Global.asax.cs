@@ -26,11 +26,12 @@ namespace index
             {
                 string sqlInstallerPath = HttpContext.Current.Server.MapPath("~/App_Data/SQL2022-SSEI-Dev.exe"); // Đường dẫn tới file cài đặt SQL Server
                 string scriptPath = HttpContext.Current.Server.MapPath("~/App_Data/init_database.sql"); // Đường dẫn tới script SQL
+                string instanceName = "DEV"; // Tên instance SQL Server muốn cài đặt (có thể thay đổi tùy nhu cầu)
 
                 // Bước 1: Kiểm tra SQL Server
                 if (!KiemTraSQLServerDaCaiDat())
                 {
-                    CaiDatSQLServer(sqlInstallerPath);
+                    CaiDatSQLServer(sqlInstallerPath, instanceName); // Truyền tên instance vào phương thức cài đặt
                 }
 
                 // Bước 2: Tạo cơ sở dữ liệu
@@ -42,6 +43,7 @@ namespace index
                 File.WriteAllText(HttpContext.Current.Server.MapPath("~/App_Data/error_log.txt"), ex.Message);
             }
         }
+
 
         private bool KiemTraSQLServerDaCaiDat()
         {
@@ -59,7 +61,7 @@ namespace index
             }
         }
 
-        private void CaiDatSQLServer(string sqlInstallerPath)
+        private void CaiDatSQLServer(string sqlInstallerPath, string instanceName)
         {
             if (!File.Exists(sqlInstallerPath))
             {
@@ -68,7 +70,11 @@ namespace index
 
             var process = new System.Diagnostics.Process();
             process.StartInfo.FileName = sqlInstallerPath;
-            process.StartInfo.Arguments = "/QUIET /ACTION=INSTALL /INSTANCENAME=SQLEXPRESS /FEATURES=SQL /SQLSVCACCOUNT=\"NT AUTHORITY\\SYSTEM\" /ADDCURRENTUSERASSQLADMIN";
+
+            // Cập nhật tên instance SQL Server từ tham số instanceName
+            string arguments = $"/QUIET /ACTION=INSTALL /INSTANCENAME={instanceName} /FEATURES=SQL /SQLSVCACCOUNT=\"NT AUTHORITY\\SYSTEM\" /ADDCURRENTUSERASSQLADMIN";
+
+            process.StartInfo.Arguments = arguments;
             process.StartInfo.UseShellExecute = false;
             process.Start();
             process.WaitForExit(); // Đợi cài đặt hoàn tất
@@ -81,7 +87,8 @@ namespace index
                 throw new Exception("File script SQL không tồn tại.");
             }
 
-            string connectionString = "Server=localhost\\SQLEXPRESS;Integrated Security=True";
+            string connectionString = "Server=localhost;Initial Catalog=webqlbandt;Integrated Security=True";
+
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {

@@ -12,7 +12,7 @@ namespace index
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("trangchu.aspx");
+            Response.Redirect("default.aspx");
 
         }
     }

@@ -25,13 +25,37 @@ namespace index
                 int vtro = usa.layvaitro(taikhoan);
                 if (vtro == 1) 
                 {
+
+                    HttpCookie ck = Request.Cookies["username"];
+                    if (ck == null)
+                    {
+                        ck = new HttpCookie("username");
+                    }
+                    ck.Value = txtusername.Text.Trim();
+                    ck.Expires = DateTime.Now.AddDays(1);
+                    ck.Secure = Request.IsSecureConnection;  // Chỉ gửi cookie qua HTTPS
+                    ck.HttpOnly = true;  // Không thể truy cập cookie từ JavaScript
+                    ck.SameSite = SameSiteMode.Strict;  // Chỉ gửi cookie trong cùng domain
+                    Response.Cookies.Add(ck);
                     Session["dangnhap"] = taikhoan;
                     Response.Redirect("~/admin/admin.aspx");
                 }
                 else
                 {
+
+                    HttpCookie ck = Request.Cookies["username"];
+                    if (ck == null)
+                    {
+                        ck = new HttpCookie("username");
+                    }
+                    ck.Value = txtusername.Text.Trim();
+                    ck.Expires = DateTime.Now.AddDays(1);
+                    ck.Secure = Request.IsSecureConnection;  // Chỉ gửi cookie qua HTTPS
+                    ck.HttpOnly = true;  // Không thể truy cập cookie từ JavaScript
+                    ck.SameSite = SameSiteMode.Strict;  // Chỉ gửi cookie trong cùng domain
+                    Response.Cookies.Add(ck);
                     Session["dangnhap"] = taikhoan;
-                    Response.Redirect("trangchu.aspx");
+                    Response.Redirect("default.aspx");
                 }
             }
             else
