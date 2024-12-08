@@ -9,20 +9,21 @@
 <tr>
     <td class="auto-style2">Tài khoản</td>
     <td>
-        <asp:TextBox ID="txtMaSP" runat="server" ></asp:TextBox>
+        <asp:TextBox ID="txttaikhoan" runat="server" ></asp:TextBox>
     </td>
 </tr>
 <tr>
     <td class="auto-style2">Mật khẩu</td>
     <td>
-        <asp:TextBox ID="txtTenSP" runat="server" ></asp:TextBox>
+        <asp:TextBox ID="txtmatkhau" runat="server" ></asp:TextBox>
     </td>
 </tr>
+
+
 <tr>
-    <td class="auto-style2">Vai trò</td>
+    <td class="auto-style2">Email</td>
     <td>
-        <asp:TextBox ID="txtHangSX" runat="server" ></asp:TextBox>
-        
+        <asp:TextBox ID="txtemail" runat="server" ></asp:TextBox>
     </td>
 </tr>
 

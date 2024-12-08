@@ -15,31 +15,31 @@ namespace index.admin
     {
 
         /// <summary>
-        /// txtMaSP control.
+        /// txttaikhoan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaSP;
+        protected global::System.Web.UI.WebControls.TextBox txttaikhoan;
 
         /// <summary>
-        /// txtTenSP control.
+        /// txtmatkhau control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenSP;
+        protected global::System.Web.UI.WebControls.TextBox txtmatkhau;
 
         /// <summary>
-        /// txtHangSX control.
+        /// txtemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtHangSX;
+        protected global::System.Web.UI.WebControls.TextBox txtemail;
 
         /// <summary>
         /// btn_luu control.

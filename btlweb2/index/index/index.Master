@@ -43,12 +43,21 @@
                    <button class="search-btn">Tìm kiếm</button>
                </div>
                <div class="header-options">
+                    <a href="#" class="header-option">
+                     <p>
+                        
+                         <asp:Label ID="txtXinChao" runat="server"></asp:Label>
+                     </p>
+                 </a>
                    <a href="admin/admin.aspx" class="header-option">
                        <p>
                            <i class="fa-solid fa-user" style="font-size:20px;margin-right:2px"></i>
-                           <span>Đăng nhập</span>
+                        <span>
+                           <asp:HyperLink ID="Hyperdangxuat" runat="server">Đăng xuất</asp:HyperLink>
+                        </span>   
                        </p>
                    </a>
+
                    <a href="/cart" class="header-option">
                        <p>
                            <i class="fa-solid fa-cart-shopping" style="font-size:20px;margin-right:2px"></i>

@@ -9,7 +9,7 @@ namespace index.cs_sql
 {
     public class connect
     {
-        string StrCon = @"Data Source=VUXUANLAM;Initial Catalog=webqlbandt;Integrated Security=True";
+        string StrCon = @"Data Source=localhost;Initial Catalog=webqlbandt;Integrated Security=True";
         public SqlConnection SQLConn { get; private set; } = null;
         public void moKetNoi()
         {

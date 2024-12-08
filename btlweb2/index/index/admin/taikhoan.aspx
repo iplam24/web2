@@ -13,6 +13,8 @@
         <asp:TableCell runat="server">Tài khoản</asp:TableCell>
         <asp:TableCell runat="server">Mật khẩu</asp:TableCell>
         <asp:TableCell runat="server">Vai trò</asp:TableCell>
+        <asp:TableCell runat="server">Email</asp:TableCell>
+        <asp:TableCell runat="server">Cập nhật</asp:TableCell>
     </asp:TableRow>
 </asp:Table>
     </div>

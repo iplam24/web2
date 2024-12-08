@@ -7,8 +7,10 @@ namespace index.cs_basic
 {
     public class user
     {
-        private string taiKhoan { get; set; }
-        private string matKhau { get; set; }
-        private string vaiTro { get; set; }
+        public string taiKhoan { get; set; }
+        public string matKhau { get; set; }
+        public string vaiTro { get; set; }
+
+        public string email {  get; set; }
     }
 }

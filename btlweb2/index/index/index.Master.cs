@@ -11,7 +11,18 @@ namespace index
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["dangnhap"] != null)
+            {
+                txtXinChao.Text = "Xin Chào " + Session["dangnhap"];
+                Hyperdangxuat.Visible = true;
+                Hyperdangxuat.NavigateUrl = "dangxuat.aspx";
+            }
+            else 
+            {
+                txtXinChao.Text = "";
+                Hyperdangxuat.Text = "Đăng nhập";
+                Hyperdangxuat.NavigateUrl = "dangnhap.aspx";
+            }
         }
     }
 }

@@ -589,3 +589,199 @@ body {
         opacity: 1;
     }
 }
+.DangNhap {
+    width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+    .DangNhap table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .DangNhap td {
+        padding: 10px;
+        vertical-align: middle;
+        font-size: 14px;
+    }
+
+        .DangNhap td[colspan="2"] {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+
+    .DangNhap input[type="text"],
+    .DangNhap input[type="password"] {
+        width: calc(100% - 10px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .DangNhap a {
+        color: #007BFF;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .DangNhap a:hover {
+            text-decoration: underline;
+        }
+
+    .DangNhap input[type="submit"],
+    .DangNhap .aspButton {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .DangNhap input[type="submit"]:hover,
+        .DangNhap .aspButton:hover {
+            background-color: #0056b3;
+        }
+
+    .DangNhap .btn_dangnhap {
+        display: block;
+        margin: 10px auto;
+    }
+.QuenMatKhau {
+    width: 300px;
+    margin: 50px auto; /* Căn giữa khối */
+    padding: 20px;
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 8px; /* Góc bo tròn */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    font-family: Arial, sans-serif;
+}
+
+    .QuenMatKhau h3 {
+        text-align: center; /* Canh giữa tiêu đề */
+        color: #333; /* Màu chữ */
+        margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    }
+
+    .QuenMatKhau table {
+        width: 100%; /* Chiều rộng toàn khối */
+    }
+
+    .QuenMatKhau td {
+        padding: 10px; /* Khoảng cách giữa các ô */
+        font-size: 14px;
+        color: #555; /* Màu chữ */
+    }
+
+    .QuenMatKhau input[type="text"],
+    .QuenMatKhau input[type="password"],
+    .QuenMatKhau asp:TextBox {
+        width: 95%; /* Chiều rộng input gần toàn bộ khối */
+        padding: 8px; /* Khoảng cách bên trong */
+        border: 1px solid #ccc; /* Đường viền input */
+        border-radius: 4px; /* Góc bo tròn */
+        font-size: 14px; /* Kích thước chữ */
+    }
+
+    .QuenMatKhau asp:Button {
+        width: 100%; /* Chiều rộng nút */
+        padding: 10px; /* Khoảng cách bên trong */
+        background-color: #007bff; /* Màu nền nút */
+        color: white; /* Màu chữ nút */
+        border: none; /* Bỏ đường viền */
+        border-radius: 4px; /* Góc bo tròn */
+        font-size: 16px; /* Kích thước chữ */
+        cursor: pointer; /* Thay đổi con trỏ */
+        text-align: center;
+    }
+
+        .QuenMatKhau asp:Button:hover {
+            background-color: #0056b3; /* Màu nền khi hover */
+        }
+
+    .QuenMatKhau asp:Label {
+        display: block;
+        text-align: center; /* Canh giữa thông báo */
+        font-size: 14px; /* Kích thước chữ */
+        margin-top: 10px; /* Khoảng cách trên thông báo */
+    }
+/* Tạo kiểu cho bảng đăng ký */
+.dangky {
+    margin: 20px auto;
+    width: 450px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+    .dangky table {
+        width: 100%;
+        border-spacing: 0;
+        margin-top: 10px;
+    }
+
+    .dangky td {
+        padding: 10px;
+        font-size: 14px;
+        color: #333;
+    }
+
+        .dangky td[colspan="2"] {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+    .dangky input[type="text"],
+    .dangky input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .dangky input[type="password"] {
+        -webkit-text-security: disc; /* Ẩn mật khẩu */
+    }
+
+    .dangky button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+        width: 100px;
+    }
+
+        .dangky button:hover {
+            background-color: #45a049;
+        }
+
+        .dangky button[type="reset"] {
+            background-color: #f44336;
+        }
+
+            .dangky button[type="reset"]:hover {
+                background-color: #da190b;
+            }
