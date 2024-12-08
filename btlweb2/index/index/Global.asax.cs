@@ -26,12 +26,12 @@ namespace index
             {
                 string sqlInstallerPath = HttpContext.Current.Server.MapPath("~/App_Data/SQL2022-SSEI-Dev.exe"); // Đường dẫn tới file cài đặt SQL Server
                 string scriptPath = HttpContext.Current.Server.MapPath("~/App_Data/init_database.sql"); // Đường dẫn tới script SQL
-                string instanceName = "DEV"; // Tên instance SQL Server muốn cài đặt (có thể thay đổi tùy nhu cầu)
+                
 
                 // Bước 1: Kiểm tra SQL Server
                 if (!KiemTraSQLServerDaCaiDat())
                 {
-                    CaiDatSQLServer(sqlInstallerPath, instanceName); // Truyền tên instance vào phương thức cài đặt
+                    CaiDatSQLServer(sqlInstallerPath); // 
                 }
 
                 // Bước 2: Tạo cơ sở dữ liệu
@@ -61,7 +61,7 @@ namespace index
             }
         }
 
-        private void CaiDatSQLServer(string sqlInstallerPath, string instanceName)
+        private void CaiDatSQLServer(string sqlInstallerPath)
         {
             if (!File.Exists(sqlInstallerPath))
             {
@@ -71,14 +71,16 @@ namespace index
             var process = new System.Diagnostics.Process();
             process.StartInfo.FileName = sqlInstallerPath;
 
-            // Cập nhật tên instance SQL Server từ tham số instanceName
-            string arguments = $"/QUIET /ACTION=INSTALL /INSTANCENAME={instanceName} /FEATURES=SQL /SQLSVCACCOUNT=\"NT AUTHORITY\\SYSTEM\" /ADDCURRENTUSERASSQLADMIN";
+            // Loại bỏ tham số liên quan đến tên instance
+            string arguments = "/QUIET /ACTION=INSTALL /FEATURES=SQL /SQLSVCACCOUNT=\"NT AUTHORITY\\SYSTEM\" /ADDCURRENTUSERASSQLADMIN";
 
             process.StartInfo.Arguments = arguments;
             process.StartInfo.UseShellExecute = false;
             process.Start();
             process.WaitForExit(); // Đợi cài đặt hoàn tất
         }
+
+        
 
         private void TaoCoSoDuLieu(string scriptPath)
         {

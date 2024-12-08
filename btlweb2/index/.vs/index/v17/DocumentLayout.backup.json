@@ -1,100 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\btlweb2\\btlweb2\\index\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\btlweb2\\index\\index\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|D:\\btlweb2\\btlweb2\\index\\index\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|D:\\btlweb2\\btlweb2\\index\\index\\databaseaccess\\sanphamsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\databaseaccess\\sanphamsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|D:\\btlweb2\\btlweb2\\index\\index\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|D:\\btlweb2\\btlweb2\\index\\index\\app_data\\init_database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\app_data\\init_database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dangnhap.aspx.cs",
-              "DocumentMoniker": "D:\\btlweb2\\btlweb2\\index\\index\\dangnhap.aspx.cs",
-              "RelativeDocumentMoniker": "index\\dangnhap.aspx.cs",
-              "ToolTip": "D:\\btlweb2\\btlweb2\\index\\index\\dangnhap.aspx.cs",
-              "RelativeToolTip": "index\\dangnhap.aspx.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwDYAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:32:12.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dangnhap.aspx",
-              "DocumentMoniker": "D:\\btlweb2\\btlweb2\\index\\index\\dangnhap.aspx",
-              "RelativeDocumentMoniker": "index\\dangnhap.aspx",
-              "ToolTip": "D:\\btlweb2\\btlweb2\\index\\index\\dangnhap.aspx",
-              "RelativeToolTip": "index\\dangnhap.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-08T13:32:05.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "sanphamsql.cs",
-              "DocumentMoniker": "D:\\btlweb2\\btlweb2\\index\\index\\dataBaseAccess\\sanphamsql.cs",
-              "RelativeDocumentMoniker": "index\\dataBaseAccess\\sanphamsql.cs",
-              "ToolTip": "D:\\btlweb2\\btlweb2\\index\\index\\dataBaseAccess\\sanphamsql.cs",
-              "RelativeToolTip": "index\\dataBaseAccess\\sanphamsql.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAcwGwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:38:37.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "D:\\btlweb2\\btlweb2\\index\\index\\Global.asax.cs",
-              "RelativeDocumentMoniker": "index\\Global.asax.cs",
-              "ToolTip": "D:\\btlweb2\\btlweb2\\index\\index\\Global.asax.cs",
-              "RelativeToolTip": "index\\Global.asax.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwFkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:14:30.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "init_database.sql",
-              "DocumentMoniker": "D:\\btlweb2\\btlweb2\\index\\index\\App_Data\\init_database.sql",
-              "RelativeDocumentMoniker": "index\\App_Data\\init_database.sql",
-              "ToolTip": "D:\\btlweb2\\btlweb2\\index\\index\\App_Data\\init_database.sql",
-              "RelativeToolTip": "index\\App_Data\\init_database.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-08T12:12:29.304Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
