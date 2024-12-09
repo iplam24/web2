@@ -24,15 +24,6 @@ namespace index
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtXinChao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtXinChao;
-
-        /// <summary>
         /// Hyperdangxuat control.
         /// </summary>
         /// <remarks>

@@ -28,13 +28,13 @@
                  <a class="nav-link" href="sanpham.aspx"><i class="fa-solid fa-basket-shopping" style="color: #ffffff;"></i> Sản phẩm</a>
              </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Giỏ hàng</a>
+                <a class="nav-link" href="giohang.aspx"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Giỏ hàng</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i> Cài đặt</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> Đăng xuất</a>
+                <a class="nav-link" href="../dangxuat.aspx"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> Đăng xuất</a>
             </li>
         </ul>
            

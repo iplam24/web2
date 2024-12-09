@@ -18,7 +18,7 @@ namespace index
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            KiemTraVaCaiDatSQL();
+          //  KiemTraVaCaiDatSQL();
         }
         private void KiemTraVaCaiDatSQL()
         {

@@ -307,6 +307,50 @@ namespace index.cs_sql
                 conn.dongKetNoi();
             }
         }
+        public void themVaoGioHang(string taiKhoan, string maSP, int soLuong)
+        {
+            try
+            {
+                conn.moKetNoi();
+
+                // Kiểm tra nếu sản phẩm đã có trong giỏ hàng của người dùng chưa
+                string checkSql = "SELECT COUNT(*) FROM tbl_giohang WHERE TaiKhoan = @TaiKhoan AND MaSP = @MaSP";
+                SqlCommand checkCmd = new SqlCommand(checkSql, conn.SQLConn);
+                checkCmd.Parameters.AddWithValue("@TaiKhoan", taiKhoan);
+                checkCmd.Parameters.AddWithValue("@MaSP", maSP);
+                int count = (int)checkCmd.ExecuteScalar();
+
+                if (count > 0)
+                {
+                    // Nếu đã có trong giỏ hàng, cập nhật số lượng
+                    string updateSql = "UPDATE tbl_giohang SET SoLuong = SoLuong + @SoLuong WHERE TaiKhoan = @TaiKhoan AND MaSP = @MaSP";
+                    SqlCommand updateCmd = new SqlCommand(updateSql, conn.SQLConn);
+                    updateCmd.Parameters.AddWithValue("@TaiKhoan", taiKhoan);
+                    updateCmd.Parameters.AddWithValue("@MaSP", maSP);
+                    updateCmd.Parameters.AddWithValue("@SoLuong", soLuong);
+                    updateCmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    // Nếu chưa có trong giỏ hàng, thêm mới
+                    string insertSql = "INSERT INTO tbl_giohang (TaiKhoan, MaSP, SoLuong, NgayThem) VALUES (@TaiKhoan, @MaSP, @SoLuong, @NgayThem)";
+                    SqlCommand insertCmd = new SqlCommand(insertSql, conn.SQLConn);
+                    insertCmd.Parameters.AddWithValue("@TaiKhoan", taiKhoan);
+                    insertCmd.Parameters.AddWithValue("@MaSP", maSP);
+                    insertCmd.Parameters.AddWithValue("@SoLuong", soLuong);
+                    insertCmd.Parameters.AddWithValue("@NgayThem", DateTime.Now);
+                    insertCmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi thêm sản phẩm vào giỏ hàng: " + ex.Message);
+            }
+            finally
+            {
+                conn.dongKetNoi();
+            }
+        }
 
     }
 }

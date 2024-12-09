@@ -11,6 +11,7 @@ namespace index
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Write("<script>alert('Tài khoản đã tồn tại!');</script>");
             Session.Abandon();
             Response.Redirect("default.aspx");
 

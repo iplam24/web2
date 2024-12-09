@@ -2,6 +2,8 @@
 using index.cs_sql;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -55,5 +57,27 @@ namespace index
                 Console.WriteLine(img);  // In ra đường dẫn hình ảnh
             }
         }
+        protected void btnAddToCart_Command(object sender, CommandEventArgs e)
+        {
+            string maSP = e.CommandArgument.ToString();
+            string taiKhoan = Session["dangnhap"]?.ToString();
+            int soLuong = 1; // Hoặc lấy từ một ô nhập số lượng nếu có
+
+            if (!string.IsNullOrEmpty(taiKhoan))
+            {
+                spsql.themVaoGioHang(taiKhoan, maSP, soLuong);
+                string script = "<script>alert('Thêm sản phẩm vào giỏ hàng thành công!');</script>";
+                ClientScript.RegisterStartupScript(this.GetType(), "Alert", script, false);
+            }
+            else
+            {
+                string script = "<script>alert('Bạn cần đăng nhập để thêm sản phẩm vào giỏ hàng.');</script>";
+                ClientScript.RegisterStartupScript(this.GetType(), "Alert", script, false);
+                Response.Redirect("dangnhap.aspx");
+            }
+        }
+
+
     }
+
 }

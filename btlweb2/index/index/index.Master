@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Điện thoại chính hãng</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/giohang.css" />
+    <link rel="stylesheet" href="css/khuyenmai.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 </head>
     <script>
@@ -43,12 +45,7 @@
                    <button class="search-btn">Tìm kiếm</button>
                </div>
                <div class="header-options">
-                    <a href="#" class="header-option">
-                     <p>
-                        
-                         <asp:Label ID="txtXinChao" runat="server"></asp:Label>
-                     </p>
-                 </a>
+                    
                    <a href="admin/admin.aspx" class="header-option">
                        <p>
                            <i class="fa-solid fa-user" style="font-size:20px;margin-right:2px"></i>
@@ -58,7 +55,7 @@
                        </p>
                    </a>
 
-                   <a href="/cart" class="header-option">
+                   <a href="hienthigiohang.aspx" class="header-option">
                        <p>
                            <i class="fa-solid fa-cart-shopping" style="font-size:20px;margin-right:2px"></i>
                            <span">Giỏ hàng</span>
@@ -68,11 +65,11 @@
            </div>
            <nav class="header-nav">
                <ul class="nav-menu">
-                   <li><a href="/">Trang Chủ</a></li>
+                   <li><a href="default.aspx">Trang Chủ</a></li>
                    <li><a href="/product">Điện thoại</a></li>
                    <li><a href="/Laptops">Laptop</a></li>
                    <li><a href="/accesories">Phụ Kiện</a></li>
-                   <li><a href="/sale">Khuyến Mãi</a></li>
+                   <li><a href="khuyenmai.aspx">Khuyến Mãi</a></li>
                    <li><a href="/contact">Liên Hệ</a></li>
                </ul>
            </nav>

@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\admin.aspx" />
+    <Content Include="admin\giohang.aspx" />
     <Content Include="admin\suataikhoan.aspx" />
     <Content Include="admin\taikhoan.aspx" />
     <Content Include="admin\themsanpham.aspx" />
@@ -133,12 +134,15 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\admin.css" />
+    <Content Include="css\giohang.css" />
+    <Content Include="css\khuyenmai.css" />
     <Content Include="dangkytaikhoan.aspx" />
     <Content Include="dangnhap.aspx" />
     <Content Include="dangxuat.aspx" />
     <Content Include="datlaimatkhau.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="hienthigiohang.aspx" />
     <Content Include="img\AsusTUFGaming.jpg" />
     <Content Include="img\cd1.jpg" />
     <Content Include="img\cd3.jpg" />
@@ -173,6 +177,7 @@
     <Content Include="img\tải xuống.jpg" />
     <Content Include="img\đăng nhập .jpg" />
     <Content Include="img\giỏ Hàng.png" />
+    <Content Include="khuyenmai.aspx" />
     <Content Include="quenmatkhau.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -252,6 +257,13 @@
     </Compile>
     <Compile Include="admin\admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\giohang.aspx.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\giohang.aspx.designer.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\suataikhoan.aspx.cs">
       <DependentUpon>suataikhoan.aspx</DependentUpon>
@@ -341,6 +353,7 @@
     <Compile Include="dangxuat.aspx.designer.cs">
       <DependentUpon>dangxuat.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dataBaseAccess\cartDatabase.cs" />
     <Compile Include="dataBaseAccess\connect.cs" />
     <Compile Include="dataBaseAccess\sanphamsql.cs" />
     <Compile Include="dataBaseAccess\userAccount.cs" />
@@ -354,12 +367,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="hienthigiohang.aspx.cs">
+      <DependentUpon>hienthigiohang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hienthigiohang.aspx.designer.cs">
+      <DependentUpon>hienthigiohang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.Master.cs">
       <DependentUpon>index.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="khuyenmai.aspx.cs">
+      <DependentUpon>khuyenmai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="khuyenmai.aspx.designer.cs">
+      <DependentUpon>khuyenmai.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="quenmatkhau.aspx.cs">

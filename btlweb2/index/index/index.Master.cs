@@ -13,13 +13,13 @@ namespace index
         {
             if (Session["dangnhap"] != null)
             {
-                txtXinChao.Text = "Xin Chào " + Session["dangnhap"];
+                
                 Hyperdangxuat.Visible = true;
                 Hyperdangxuat.NavigateUrl = "dangxuat.aspx";
             }
             else 
             {
-                txtXinChao.Text = "";
+                
                 Hyperdangxuat.Text = "Đăng nhập";
                 Hyperdangxuat.NavigateUrl = "dangnhap.aspx";
             }

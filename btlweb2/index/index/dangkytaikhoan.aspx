@@ -30,6 +30,12 @@
             </td>
         </tr>
         <tr>
+            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="lbl_thongbao" runat="server" ForeColor="red"></asp:Label>
+            </td>
+        </tr>
+        <tr>
             <td colspan="2">
                 <asp:Button ID="btndangky" runat="server" Height="27px" Text="Đăng ký" Width="82px" OnClick="btndangky_Click" />
                 <asp:Button ID="btnhuy" runat="server" Height="27px" Text="Hủy" Width="82px" />

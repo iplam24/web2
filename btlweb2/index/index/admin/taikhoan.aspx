@@ -7,7 +7,7 @@
     <h2>Danh sách sản phẩm</h2>
     <a href="themtaikhoan.aspx">Thêm tài khoản</a>
     <div>
-    <asp:Table ID="tbl_taikhoan" runat="server">
+    <asp:Table ID="tbl_taikhoan" runat="server" CssClass="tbl_taikhoan">
     <asp:TableRow runat="server">
         <asp:TableCell runat="server">STT</asp:TableCell>
         <asp:TableCell runat="server">Tài khoản</asp:TableCell>

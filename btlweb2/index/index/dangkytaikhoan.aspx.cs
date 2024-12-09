@@ -25,7 +25,7 @@ namespace index
             // Kiểm tra nếu các trường nhập liệu không rỗng hoặc null
             if (string.IsNullOrEmpty(taikhoan) || string.IsNullOrEmpty(matkhau) || string.IsNullOrEmpty(nhaplai) || string.IsNullOrEmpty(email))
             {
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Vui lòng điền đầy đủ thông tin!');", true);
+                lbl_thongbao.Text = "Vui lòng nhập đầy đủ thông tin";
             }
             else
             {
@@ -34,7 +34,7 @@ namespace index
                     bool check = usa.KiemTraTaiKhoanTonTai(taikhoan);
                     if (check)
                     {
-                        Response.Write("<script>alert('Tài khoản đã tồn tại!');</script>");
+                        lbl_thongbao.Text = "Tài khoản đã tồn tại trong hệ thống!";
                     }
                     else
                     {
@@ -47,7 +47,7 @@ namespace index
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Mật khẩu không khớp!');", true);
+                    lbl_thongbao.Text = "Mật khẩu không khớp!";
                 }
             }
 
