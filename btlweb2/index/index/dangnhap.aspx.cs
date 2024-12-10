@@ -13,14 +13,21 @@ namespace index
         userAccount usa = new userAccount();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            {
+                string reason = Request.QueryString["reason"];
+                if (reason == "cart")
+                {
+                    lblthongbao.Text = "Bạn cần đăng nhập để sử dụng chức năng giỏ hàng.";
+                }
+            }
         }
 
         protected void btn_dangnhap_Click(object sender, EventArgs e)
         {
-            string taikhoan=txtusername.Text.Trim();
-            string matkhau=txtpassword.Text.Trim();
-            bool dangnhap=usa.dangnhap(taikhoan, matkhau);
+            string taikhoan = txtusername.Text.Trim();
+            string matkhau = txtpassword.Text.Trim();
+
             if (usa.dangnhap(taikhoan, matkhau))
             {
                 int vtro = usa.layvaitro(taikhoan);
@@ -31,10 +38,18 @@ namespace index
                 // Lưu vào session
                 Session["dangnhap"] = taikhoan;
 
-                // Chuyển hướng dựa trên vai trò bằng JavaScript
-                string redirectUrl = vtro == 1 ? "admin/admin.aspx" : "default.aspx";
-                string script = $"<script>alert('Đăng nhập thành công! Xin chào'); window.location='{redirectUrl}';</script>";
-                ClientScript.RegisterStartupScript(this.GetType(), "AlertRedirect", script, false);
+                // Kiểm tra nếu có redirect
+                string redirectUrl = Request.QueryString["redirect"];
+                if (!string.IsNullOrEmpty(redirectUrl))
+                {
+                    Response.Redirect(redirectUrl); // Chuyển đến trang đích
+                }
+                else
+                {
+                    // Chuyển hướng mặc định dựa vào vai trò
+                    redirectUrl = vtro == 1 ? "admin/admin.aspx" : "default.aspx";
+                    Response.Redirect(redirectUrl);
+                }
             }
             else
             {

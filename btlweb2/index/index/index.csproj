@@ -104,6 +104,7 @@
   <ItemGroup>
     <Content Include="admin\admin.aspx" />
     <Content Include="admin\giohang.aspx" />
+    <Content Include="admin\hhhhh.aspx" />
     <Content Include="admin\suataikhoan.aspx" />
     <Content Include="admin\taikhoan.aspx" />
     <Content Include="admin\themsanpham.aspx" />
@@ -264,6 +265,13 @@
     </Compile>
     <Compile Include="admin\giohang.aspx.designer.cs">
       <DependentUpon>giohang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\hhhhh.aspx.cs">
+      <DependentUpon>hhhhh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\hhhhh.aspx.designer.cs">
+      <DependentUpon>hhhhh.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\suataikhoan.aspx.cs">
       <DependentUpon>suataikhoan.aspx</DependentUpon>

@@ -4,6 +4,11 @@
 
                <table style="width: 418px">
                    <tr>
+                       <td colspan="2" style="height: 22px">
+                           <asp:Label ID="lblthongbao" runat="server"></asp:Label>
+                       </td>
+                   </tr>
+                   <tr>
                        <td colspan="2" style="height: 22px">Đăng nhập</td>
                    </tr>
                    <tr>

@@ -18,7 +18,8 @@ namespace index
             }
             else
             {
-                Response.Redirect("dangnhap.aspx");
+                Response.Redirect("dangnhap.aspx?reason=cart&redirect=hienthigiohang.aspx");
+
             }
         }
     }
