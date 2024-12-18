@@ -1,0 +1,455 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    background-color: #343a40;
+    padding: 15px;
+    position: fixed;
+    width: 220px;
+    color: white;
+    transition: width 0.3s;
+}
+
+    .sidebar:hover {
+        width: 250px;
+    }
+
+    .sidebar h4 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+.nav-link {
+    color: #cfd8dc;
+    transition: color 0.3s;
+}
+
+    .nav-link:hover {
+        color: #ffffff;
+        background-color: #495057;
+        border-radius: 5px;
+    }
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.3s;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    color: #007bff;
+}
+
+.statistics, .recent-activities {
+    margin-top: 20px;
+}
+
+    .statistics p, .recent-activities ul {
+        background-color: #e9ecef;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        transition: background-color 0.3s;
+    }
+
+        .statistics p:hover, .recent-activities ul:hover {
+            background-color: #d3d3d3;
+        }
+
+.card {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+    }
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.tblSanPham {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tblSanPham th, .tblSanPham td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tblSanPham th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.tblSanPham tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tblSanPham tr:hover {
+    background-color: #e9ecef;
+}
+
+.tblSanPham td img {
+    max-width: 100px; /* Điều chỉnh kích thước ảnh */
+    height: auto;
+    border-radius: 5px;
+}
+
+.tblSanPham td {
+    font-size: 14px;
+    color: #343a40;
+}
+
+    .tblSanPham th:nth-child(1), .tblSanPham td:nth-child(1) {
+        width: 5%;
+    }
+    /* STT */
+    .tblSanPham th:nth-child(2), .tblSanPham td:nth-child(2) {
+        width: 10%;
+    }
+    /* Mã sản phẩm */
+    .tblSanPham th:nth-child(3), .tblSanPham td:nth-child(3) {
+        width: 15%;
+    }
+    /* Tên sản phẩm */
+    .tblSanPham th:nth-child(4), .tblSanPham td:nth-child(4) {
+        width: 10%;
+    }
+    /* Hãng sản xuất */
+    .tblSanPham th:nth-child(5), .tblSanPham td:nth-child(5) {
+        width: 10%;
+    }
+    /* Ngày phát hành */
+    .tblSanPham th:nth-child(6), .tblSanPham td:nth-child(6) {
+        width: 10%;
+    }
+    /* Kích thước màn */
+    .tblSanPham th:nth-child(7), .tblSanPham td:nth-child(7) {
+        width: 10%;
+    }
+    /* Chip */
+    .tblSanPham th:nth-child(8), .tblSanPham td:nth-child(8) {
+        width: 5%;
+    }
+    /* Ram */
+    .tblSanPham th:nth-child(9), .tblSanPham td:nth-child(9) {
+        width: 5%;
+    }
+    /* Bộ nhớ */
+    .tblSanPham th:nth-child(10), .tblSanPham td:nth-child(10) {
+        width: 10%;
+    }
+    /* Pin */
+    .tblSanPham th:nth-child(11), .tblSanPham td:nth-child(11) {
+        width: 10%;
+    }
+    /* Hệ điều hành */
+    .tblSanPham th:nth-child(12), .tblSanPham td:nth-child(12) {
+        width: 5%;
+    }
+    /* Trọng lượng */
+    .tblSanPham th:nth-child(13), .tblSanPham td:nth-child(13) {
+        width: 10%;
+    }
+    /* Giá nhập */
+    .tblSanPham th:nth-child(14), .tblSanPham td:nth-child(14) {
+        width: 10%;
+    }
+    /* Giá bán */
+    .tblSanPham th:nth-child(15), .tblSanPham td:nth-child(15) {
+        width: 10%;
+    }
+/* Định dạng cho bảng */
+.tbl_taikhoan {
+    width: 100%; /* Chiều rộng của bảng */
+    border-collapse: collapse; /* Gộp các đường viền */
+    margin: 20px 0; /* Khoảng cách trên và dưới bảng */
+}
+
+    /* Định dạng cho các ô trong bảng */
+    .tbl_taikhoan th, .tbl_taikhoan td {
+        border: 1px solid #dddddd; /* Đường viền cho các ô */
+        text-align: left; /* Căn trái cho nội dung */
+        padding: 8px; /* Khoảng cách bên trong các ô */
+    }
+
+    /* Định dạng cho hàng tiêu đề */
+    .tbl_taikhoan tr:first-child {
+        background-color: #f2f2f2; /* Màu nền cho hàng tiêu đề */
+        font-weight: bold; /* Đậm chữ cho hàng tiêu đề */
+    }
+
+    /* Định dạng cho hàng khi di chuột qua */
+    .tbl_taikhoan tr:hover {
+        background-color: #f1f1f1; /* Màu nền khi di chuột qua hàng */
+    }
+
+    /* Định dạng cho các ô trong hàng */
+    .tbl_taikhoan td {
+        color: #333; /* Màu chữ cho các ô */
+    }
+
+    /* Định dạng cho hàng lẻ */
+    .tbl_taikhoan tr:nth-child(odd) {
+        background-color: #f9f9f9; /* Màu nền cho hàng lẻ */
+    }
+/* Màu sắc */
+/* Content area */
+/* Content area */
+.contentt {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px); /* Chiếm toàn bộ không gian còn lại */
+}
+
+    .contentt h2 {
+        font-size: 26px;
+        color: #2C3E50;
+    }
+
+    .contentt .form-container {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .form-container button:hover {
+        background-color: #0056b3;
+    }
+.auto-style1 {
+    width: 100%;
+}
+
+.auto-style2 {
+    width: 412px;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Chọn font chữ dễ đọc */
+    background-color: #f8f9fa; /* Màu nền nhẹ */
+    margin: 0;
+    padding: 20px;
+}
+
+.auto-style1 {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Màu nền cho bảng */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho bảng */
+    border-radius: 8px; /* Bo góc cho bảng */
+    overflow: hidden; /* Ẩn các phần thừa */
+}
+
+    .auto-style1 td, .auto-style1 th {
+        padding: 12px; /* Khoảng cách trong ô */
+        border: 1px solid #dee2e6; /* Đường viền cho ô */
+        text-align: left; /* Căn trái cho văn bản */
+    }
+
+    .auto-style1 tr:nth-child(even) {
+        background-color: #f2f2f2; /* Màu nền cho hàng chẵn */
+    }
+
+    .auto-style1 tr:hover {
+        background-color: #e9ecef; /* Màu nền khi di chuột qua hàng */
+    }
+
+.auto-style2 {
+    width: 200px; /* Chiều rộng cho cột nhãn */
+    font-weight: bold; /* Làm đậm văn bản */
+}
+
+input[type="text"], input[type="file"], textarea {
+    width: 100%; /* Chiều rộng 100% cho các trường nhập */
+    padding: 10px; /* Khoảng cách trong trường nhập */
+    border: 1px solid #ced4da; /* Đường viền cho trường nhập */
+    border-radius: 4px; /* Bo góc cho trường nhập */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+
+    input[type="text"]:focus, textarea:focus {
+        border-color: #007bff; /* Đổi màu viền khi trường nhập được chọn */
+        outline: none; /* Bỏ viền mặc định */
+    }
+
+.btn_luu {
+    background-color: #007bff; /* Màu nền cho nút */
+    color: white; /* Màu chữ cho nút */
+    border: none; /* Bỏ đường viền cho nút */
+    border-radius: 4px; /* Bo góc cho nút */
+    padding: 10px 15px; /* Khoảng cách trong nút */
+    cursor: pointer; /* Đổi con trỏ khi di chuột qua nút */
+    font-size: 16px; /* Kích thước chữ cho nút */
+    margin: 0 10px; /* Khoảng cách giữa hai nút */
+}
+
+    .btn_luu:hover {
+        background-color: #0056b3; /* Đổi màu nền khi di chuột qua nút */
+    }
+
+.btn_huy {
+    background-color: indianred; /* Màu nền cho nút */
+    color: white; /* Màu chữ cho nút */
+    border: none; /* Bỏ đường viền cho nút */
+    border-radius: 4px; /* Bo góc cho nút */
+    padding: 10px 15px; /* Khoảng cách trong nút */
+    cursor: pointer; /* Đổi con trỏ khi di chuột qua nút */
+    font-size: 16px; /* Kích thước chữ cho nút */
+    margin: 0 10px; /* Khoảng cách giữa hai nút */
+}
+
+    .btn_huy:hover {
+        background-color: #0056b3; /* Đổi màu nền khi di chuột qua nút */
+    }
+
+label {
+    display: block; /* Hiển thị nhãn dưới dạng khối */
+    margin-bottom: 5px; /* Khoảng cách dưới nhãn */
+}
+
+.auto-style3 {
+    font-weight: bold;
+}
+/* Tạo kiểu cho bảng */
+.tbl_giohang {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+    /* Kiểu cho các dòng trong bảng */
+    .tbl_giohang th, .tbl_giohang td {
+        border: 1px solid #ddd;
+        padding: 8px 12px;
+        text-align: center;
+    }
+
+    /* Kiểu cho tiêu đề bảng */
+    .tbl_giohang th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Kiểu cho các dòng trong bảng khi hover */
+    .tbl_giohang tr:hover {
+        background-color: #f2f2f2;
+    }
+
+    /* Kiểu cho các dòng lẻ */
+    .tbl_giohang tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    /* Kiểu cho các dòng chẵn */
+    .tbl_giohang tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    /* Kiểu cho các cột ngày tháng và thời gian */
+    .tbl_giohang td:last-child {
+        color: #FF6347;
+    }
+
+    /* Thêm kiểu cho các liên kết cập nhật/xóa */
+    .tbl_giohang a {
+        color: #4CAF50;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+        /* Thêm kiểu cho liên kết khi hover */
+        .tbl_giohang a:hover {
+            text-decoration: underline;
+        }
+
+    /* Kiểu cho ô input trong bảng nếu có */
+    .tbl_giohang input[type="text"], .tbl_giohang input[type="number"] {
+        padding: 5px;
+        margin: 5px;
+        width: 90%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    /* Kiểu cho các nút thao tác nếu có */
+    .tbl_giohang button {
+        padding: 6px 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .tbl_giohang button:hover {
+            background-color: #45a049;
+        }
+/* Kiểu cho ảnh trong giỏ hàng */
+.tbl_giohang img {
+    max-width: 100px; /* Giới hạn chiều rộng của ảnh */
+    height: auto; /* Tự động tính toán chiều cao dựa trên tỷ lệ */
+    margin: 0 auto; /* Canh giữa ảnh */
+    display: block; /* Hiển thị dưới dạng block để dễ canh giữa */
+}
+

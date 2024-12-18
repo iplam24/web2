@@ -1,0 +1,162 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Product Detail Section */
+ctsp {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: white;
+}
+
+.sproduct-detail {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Product Images */
+.sproduct-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sproduct-main-img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.sproduct-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.thumbnail {
+    width: 30%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+    .thumbnail:hover {
+        border-color: #E53935;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+.sproduct-info {
+    flex: 1;
+}
+
+.sproduct-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sproduct-price {
+    font-size: 28px;
+    color: #E53935;
+    margin-bottom: 15px;
+}
+
+.sproduct-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.sproduct-rating {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.rating-title {
+    font-weight: bold;
+}
+
+.rating-stars i {
+    font-size: 18px;
+}
+
+.rating-count {
+    font-size: 14px;
+    color: #666;
+}
+
+.sproduct-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.sbtn-add-to-cart,
+.sbtn-buy-now {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px
+}
+
+.sbtn-add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+}
+
+    .sbtn-add-to-cart:hover {
+        background-color: #45a049;
+    }
+
+.sbtn-buy-now {
+    background-color: #E53935;
+    color: white;
+}
+
+    .sbtn-buy-now:hover {
+        background-color: #d32f2f;
+    }
+/* Product Specs */
+.sproduct-specs {
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+    .sproduct-specs h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .sproduct-specs ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+
+        .sproduct-specs ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }

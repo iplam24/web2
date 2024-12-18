@@ -1,0 +1,198 @@
+﻿/*body {
+}
+.dangky {
+    margin: 20px auto;
+    width: 450px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+    .dangky table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .dangky td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+        .dangky td:first-child {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .dangky td:last-child {
+            text-align: left;
+        }
+
+    .dangky h2,
+    .dangky table td[colspan="2"] {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #4CAF50;
+        margin-bottom: 10px;
+    }
+
+    .dangky input[type="text"],
+    .dangky input[type="password"],
+    .dangky input[type="email"],
+    .dangky textarea {
+        width: calc(100% - 20px);
+        padding: 8px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+        .dangky input[type="text"]:focus,
+        .dangky input[type="password"]:focus,
+        .dangky input[type="email"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+    .dangky button,
+    .dangky input[type="submit"],
+    .dangky input[type="button"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: background-color 0.3s;
+    }
+
+        .dangky button:hover,
+        .dangky input[type="submit"]:hover,
+        .dangky input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+    .dangky .cancel-btn {
+        background-color: #33FFFF;
+        margin-left: 5px;
+    }
+
+        .dangky .cancel-btn:hover {
+            background-color: #e53935;
+        }
+
+    .dangky .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: -10px;
+    }
+*/
+.dangky {
+    margin: 20px auto;
+    width: 450px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+    .dangky table {
+        width: 100%;
+        border-collapse: collapse;
+
+    }
+
+    .dangky td {
+        padding: 10px;
+        font-size: 14px;
+        color:chocolate;
+    }
+
+        .dangky td:first-child {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .dangky td:last-child {
+            text-align: left;
+        }
+
+    .dangky h1,
+    .dangky table td[colspan="2"] {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #4CAF50;
+        margin-bottom: 10px;
+    }
+
+    .dangky input[type="text"],
+    .dangky input[type="password"],
+    .dangky input[type="email"],
+    .dangky textarea {
+        width: calc(100% - 20px);
+        padding: 8px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+        .dangky input[type="text"]:focus,
+        .dangky input[type="password"]:focus,
+        .dangky input[type="email"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+    /* Styling for the buttons */
+    .dangky .btn-submit {
+        background-color: #0033FF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-right: 40px; /* Space between buttons */
+        transition: background-color 0.3s;
+    }
+
+        .dangky .btn-submit:hover {
+            background-color: #0033FF; /* Darker blue */
+        }
+
+    .dangky .cancel-btn {
+        background-color: #FF3300; /* Red */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .dangky .cancel-btn:hover {
+            background-color: #D43C00; /* Darker red */
+        }
+
+    /* Align the buttons and add even spacing */
+    .dangky .button-row {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .dangky .button-row button {
+            margin: 0 10px; /* Equal spacing between buttons */
+        }

@@ -1,0 +1,49 @@
+﻿
+.DatLaiMatKhau {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Màu viền sáng để mềm mại */
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Độ bóng nhẹ để tạo chiều sâu */
+    background-color: #fff; /* Nền trắng để dễ đọc */
+}
+
+    .DatLaiMatKhau h3 {
+        text-align: center;
+        color: #FFA500; /* Màu cam cho tiêu đề */
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold; /* Đậm để nhấn mạnh */
+    }
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Đảm bảo kích thước hộp nhất quán */
+}
+
+.btn-submit {
+    background-color: #D2691E; /* Màu cam cho nút bấm */
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-submit:hover {
+        background-color: #CC6600; /* Cam đậm khi di chuột qua */
+    }
+
+.error-message {
+    color: #FF4500; /* Màu cam sáng cho thông báo lỗi */
+    text-align: center;
+    font-size: 14px; /* Kích thước font nhỏ hơn để dễ đọc */
+    margin-top: -10px; /* Điều chỉnh không gian giữa trường nhập và thông báo lỗi */
+}

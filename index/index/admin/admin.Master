@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.Master.cs" Inherits="index.admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<title>Trang quản lý bán điện thoại</title>
+<link rel="stylesheet" href="../css/admin.css" />
+    <div class="contentt">
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+ </asp:ContentPlaceHolder>
+</div>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div class="sidebar">
+        <h4><i class="fa-solid fa-bars" style="color: #ffffff;"></i> Danh mục quản trị viên</h4>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="admin.aspx"><i class="fa-brands fa-windows" style="color: #f2f2f2;"></i> Bảng điều khiển</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="taikhoan.aspx"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Tài khoản</a>
+            </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="sanpham.aspx"><i class="fa-solid fa-basket-shopping" style="color: #ffffff;"></i> Sản phẩm</a>
+             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="giohang.aspx"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Giỏ hàng</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="khuyenmai.aspx"><i class="fa-solid fa-gear" style="color: #ffffff;"></i> Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../dangxuat.aspx"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> Đăng xuất</a>
+            </li>
+        </ul>
+           
+    </div>
+               <div class="contentt">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+ 
+          
+   
+    </form>
+
+           
+            
+            
+           
+            
+            
+           
+      
+        
+    
+
+</body>
+</html>
+

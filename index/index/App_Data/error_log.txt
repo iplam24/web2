@@ -1,0 +1,4 @@
+Database 'webqlbandt' already exists. Choose a different database name.
+There is already an object named 'tbl_giohang' in the database.
+Changed database context to 'master'.
+Changed database context to 'webqlbandt'.

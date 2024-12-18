@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="index.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta content="INDEX,FOLLOW" name="robots">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điện thoại chính hãng</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/giohang.css" />
+    <link rel="stylesheet" href="css/khuyenmai.css" />
+    <link rel="stylesheet" href="css/chitietsp.css" />
+    <link rel="stylesheet" href="css/datlaimk.css" />
+    <link rel="stylesheet" href="css/datlaimk.css" />
+     <link rel="stylesheet" href="css/dkytk.css" />
+    <link rel="stylesheet" href="css/lienhe.css" />
+    <%--  --%>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+    <script>
+    // Lấy tất cả các phần tử văn bản trên trang
+    const textElements = document.querySelectorAll('h1, h2, h3, p, span, a');
+
+    // Thêm sự kiện khi nhấn và thả chuột
+    textElements.forEach(element => {
+        element.addEventListener('mousedown', () => {
+            element.style.color = '#ff6600'; // Đổi màu chữ khi nhấn
+        });
+
+        element.addEventListener('mouseup', () => {
+            element.style.color = '#000000'; // Trả về màu mặc định
+        });
+    });
+
+    </script>
+<body>
+       <form id="form1" runat="server">
+       <!-- Header -->
+       <div class="header">
+           <div class="container">
+               <div class="header-logo">
+                   <a href="/">
+                       <img src="img/logo2.jpg" alt="Điện thoại chính hãng" class="logo-img">
+                   </a>
+               </div>
+               <h1 class="header-title">Điện thoại chính hãng</h1>
+               <div class="header-search">
+                   <input type="text" placeholder="Tìm kiếm ...." class="search-input">
+                   <button class="search-btn">Tìm kiếm</button>
+               </div>
+               <div class="header-options">
+                    
+                  
+                       <p>
+                            
+                           <asp:HyperLink ID="Hyperdangxuat" runat="server" style="text-decoration:none;color:black;" CssClass="hyperdangxuat">Đăng xuất</asp:HyperLink>
+                          
+                       </p>
+                   
+
+                   <a href="hienthigiohang.aspx" class="header-option">
+                       <p>
+                           <i class="fa-solid fa-cart-shopping" style="font-size:20px;margin-right:2px"></i>
+                           <span">Giỏ hàng</span>
+                       </p>
+                   </a>
+               </div>
+           </div>
+           <nav class="header-nav">
+               <ul class="nav-menu">
+                   <li><a href="default.aspx">Trang Chủ</a></li>
+                   <li><a href="/product">Điện thoại</a></li>
+                   <li><a href="/Laptops">Laptop</a></li>
+                   <li><a href="/accesories">Phụ Kiện</a></li>
+                   <li><a href="khuyenmai.aspx">Khuyến Mãi</a></li>
+                   <li><a href="lienhe.aspx">Liên Hệ</a></li>
+               </ul>
+           </nav>
+       </div>
+        
+
+  
+   <script>
+       let slideIndex = 0;
+       showSlides();
+
+       function showSlides() {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           let dots = document.getElementsByClassName("dot");
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+           slideIndex++;
+           if (slideIndex > slides.length) {
+               slideIndex = 1;
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex - 1].style.display = "block";
+           dots[slideIndex - 1].className += " active";
+           setTimeout(showSlides, 5000); // Change image every 5 seconds
+       }
+
+       function currentSlide(n) {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           let dots = document.getElementsByClassName("dot");
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[n - 1].style.display = "block";
+           dots[n - 1].className += " active";
+           slideIndex = n;
+       }
+   </script>
+    
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Thông đại hỗ trợ</h3>
+                    <ul>
+                        <li><a href="tel:1900232460">Gọi mua: 1900 232 460</a></li>
+                        <li><a href="tel:18001062">Khiếu nại: 1800 1062</a></li>
+                        <li><a href="tel:1900232464">Bảo hành: 1900 232 464</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Về công ty</h3>
+                    <ul>
+                        <li><a href="#">Thông tin công ty</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Gửi góp ý</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Thông tin khác</h3>
+                    <ul>
+                        <li><a href="#">Tích điểm Quà tặng VIP</a></li>
+                        <li><a href="#">Lịch sử mua hàng</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Điện thoại chính hãng - Uy tín hàng đầu</p>
+            </div>
+        </footer>
+    
+</form>    
+</body>
+</html>
