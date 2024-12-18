@@ -134,7 +134,7 @@ namespace index
             
 
             // Thông báo thành công và chuyển hướng
-            Response.Write("<script>alert('Đặt hàng thành công!'); window.location.href='thanhcong.aspx';</script>");
+            Response.Write("<script>alert('Đặt hàng thành công!'); window.location.href='hienthigiohang.aspx';</script>");
         }
 
 

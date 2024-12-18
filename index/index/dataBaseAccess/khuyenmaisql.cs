@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using index.cs_sql;
 using System.Web.UI.WebControls;
 using index.cs_basic;
+using System.IO;
 
 namespace index.dataBaseAccess
 {
@@ -122,6 +123,104 @@ namespace index.dataBaseAccess
 
             conn.dongKetNoi();
 
+        }
+        public void xoaKhuyenMai(string makm)
+        {
+            try
+            {
+                // Mở kết nối đến cơ sở dữ liệu
+                conn.moKetNoi();
+
+                // Truy vấn SQL để lấy thông tin các hình ảnh của khuyến mãi cần xóa
+                string sql = "SELECT HinhAnh FROM tbl_khuyenmai WHERE MaKhuyenMai = @MaKhuyenMai";
+
+                SqlCommand cmd = new SqlCommand(sql, conn.SQLConn);
+                cmd.Parameters.AddWithValue("@MaKhuyenMai", makm);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                // Kiểm tra nếu khuyến mãi tồn tại trong cơ sở dữ liệu
+                if (reader.HasRows)
+                {
+                    reader.Read(); // Đọc một bản ghi
+
+                    // Lấy tên ảnh từ cơ sở dữ liệu
+                    string hinhAnh = reader["HinhAnh"].ToString();
+
+                    // Đóng kết nối sau khi lấy được thông tin ảnh
+                    reader.Close();
+
+                    // Đường dẫn đến thư mục chứa ảnh (có thể thay đổi theo cấu trúc hệ thống)
+                    string folderPath = HttpContext.Current.Server.MapPath("~/admin/");
+
+                    // Xóa các ảnh nếu chúng tồn tại trong thư mục
+                    if (!string.IsNullOrEmpty(hinhAnh) && File.Exists(Path.Combine(folderPath, hinhAnh)))
+                    {
+                        File.Delete(Path.Combine(folderPath, hinhAnh));
+                    }
+
+                    // Xóa sản phẩm khỏi cơ sở dữ liệu
+                    string deleteSql = "DELETE FROM tbl_khuyenmai WHERE MaKhuyenMai = @MaKhuyenMai";
+                    SqlCommand deleteCmd = new SqlCommand(deleteSql, conn.SQLConn);
+                    deleteCmd.Parameters.AddWithValue("@MaKhuyenMai", makm);
+                    deleteCmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    throw new Exception("Khuyến mãi không tồn tại.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi xóa khuyến mãi: " + ex.Message);
+            }
+            finally
+            {
+                // Đảm bảo kết nối được đóng lại dù có lỗi hay không
+                conn.dongKetNoi();
+            }
+        }
+
+        public List<khuyenmaii> layThongTinKM()
+        {
+            List<khuyenmaii> dsKhuyenMai = new List<khuyenmaii>();
+
+            try
+            {
+                conn.moKetNoi();
+                string sql = "SELECT * FROM tbl_khuyenmai";
+                SqlCommand cmd = new SqlCommand(sql, conn.SQLConn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    khuyenmaii km = new khuyenmaii();
+                    {
+                        km.MaKhuyenMai = reader["MaKhuyenMai"].ToString();
+                        km.TenKhuyenMai = reader["TenKhuyenMai"].ToString();
+                        km.MoTa = reader["MoTa"].ToString();
+                        km.NgayBatDau = reader["NgayBatDau"].ToString();
+                        km.NgayKetThuc = reader["NgayKetThuc"].ToString();
+                        km.MucGiamGia = reader["MucGiamGia"].ToString();
+                        km.HinhAnh = reader["HinhAnh"].ToString();
+                    };
+                    // Kiểm tra giá trị của HinhAnh1
+                    Console.WriteLine("HinhAnh: " + km.HinhAnh); // Đảm bảo HinhAnh có giá trị
+                    dsKhuyenMai.Add(km);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi lấy thông tin sản phẩm: " + ex.Message);
+            }
+            finally
+            {
+                conn.dongKetNoi();
+            }
+
+            return dsKhuyenMai;
         }
         public decimal layMucGiamGia(string maKM)
         {

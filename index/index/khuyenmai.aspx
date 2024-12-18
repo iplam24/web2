@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="khuyenmai.aspx.cs" Inherits="index.khuyenmai" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="promo-page">
+         <div class="promo-page">
+<div class="promo-page">
     <h1>Khuyến Mãi Hiện Có</h1>
 
     <div class="promo-container">
@@ -8,18 +9,20 @@
             <ItemTemplate>
                 <div class="promo-item">
                     <div class="promo-info">
-                        <img src='<%# Eval("ImageUrl") %>' alt="Khuyến mãi giảm giá" class="promo-image">
-                        <h3><%# Eval("Title") %></h3>
-                        <p>Mã khuyến mãi: <strong><%# Eval("PromoCode") %></strong></p>
-                        <p>Hạn sử dụng: <%# Eval("ExpiryDate") %></p>
-                    </div>
-                    <button class="apply-btn" onclick="applyPromo('<%# Eval("PromoCode") %>')">Áp Dụng</button>
+                        <img src='<%# "/admin/" +Eval("HinhAnh") %>' alt="Khuyến mãi giảm giá" class="promo-image">
+                        <h3><%# Eval("TenKhuyenMai") %></h3>
+                        <p>Mã khuyến mãi: <strong><%# Eval("MaKhuyenMai") %></strong></p>                      
+                        <p>Mô tả: <%# Eval("MoTa") %></p>
+                        <p>Ngày bắt đầu: <%# Eval("NgayBatDau") %></p>
+                        <p>Ngày kết thúc: <%# Eval("NgayKetThuc") %></p>
+                        <p>Mức Giảm Giá: <%# Eval("MucGiamGia") %></p>
+                    </div>                   
                 </div>
             </ItemTemplate>
         </asp:Repeater>
     </div>
 </div>
-
+         </div>
              <script>
         // Mảng các mã khuyến mãi
         const promos = [
