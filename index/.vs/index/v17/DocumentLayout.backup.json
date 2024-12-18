@@ -1,12 +1,394 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\btlweb2\\index\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\databaseaccess\\cartdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\databaseaccess\\cartdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\databaseaccess\\donhangsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\databaseaccess\\donhangsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\admin\\donhang.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\admin\\donhang.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\admin\\donhang.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\admin\\donhang.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\hienthigiohang.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\hienthigiohang.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\databaseaccess\\khuyenmaisql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\databaseaccess\\khuyenmaisql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\cs basic\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\cs basic\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\hienthigiohang.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\hienthigiohang.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\databaseaccess\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\databaseaccess\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\admin\\admin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\admin\\admin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\databaseaccess\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\databaseaccess\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\laptop.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\laptop.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\laptop.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\laptop.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\phukien.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\phukien.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\phukien.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\phukien.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\dienthoai.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\dienthoai.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\dienthoai.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\dienthoai.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\index.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\index.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\danhsachsanpham.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\danhsachsanpham.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\danhsachsanpham.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\danhsachsanpham.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|d:\\btlweb2\\index\\index\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60124FDE-DE1C-4D39-9A70-E6BB46B25191}|index\\index.csproj|solutionrelative:index\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 216,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "donhang.aspx.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\admin\\donhang.aspx.cs",
+              "RelativeDocumentMoniker": "index\\admin\\donhang.aspx.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\admin\\donhang.aspx.cs",
+              "RelativeToolTip": "index\\admin\\donhang.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:06:13.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "userAccount.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\dataBaseAccess\\userAccount.cs",
+              "RelativeDocumentMoniker": "index\\dataBaseAccess\\userAccount.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\dataBaseAccess\\userAccount.cs",
+              "RelativeToolTip": "index\\dataBaseAccess\\userAccount.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T19:16:13.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "donhangsql.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\dataBaseAccess\\donhangsql.cs",
+              "RelativeDocumentMoniker": "index\\dataBaseAccess\\donhangsql.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\dataBaseAccess\\donhangsql.cs",
+              "RelativeToolTip": "index\\dataBaseAccess\\donhangsql.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T19:15:50.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "donhang.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\admin\\donhang.aspx",
+              "RelativeDocumentMoniker": "index\\admin\\donhang.aspx",
+              "ToolTip": "D:\\btlweb2\\index\\index\\admin\\donhang.aspx",
+              "RelativeToolTip": "index\\admin\\donhang.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T19:07:55.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "admin.Master",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\admin\\admin.Master",
+              "RelativeDocumentMoniker": "index\\admin\\admin.Master",
+              "ToolTip": "D:\\btlweb2\\index\\index\\admin\\admin.Master",
+              "RelativeToolTip": "index\\admin\\admin.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T19:06:53.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "khuyenmaisql.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\dataBaseAccess\\khuyenmaisql.cs",
+              "RelativeDocumentMoniker": "index\\dataBaseAccess\\khuyenmaisql.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\dataBaseAccess\\khuyenmaisql.cs",
+              "RelativeToolTip": "index\\dataBaseAccess\\khuyenmaisql.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T18:58:27.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "giohang.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\cs basic\\giohang.cs",
+              "RelativeDocumentMoniker": "index\\cs basic\\giohang.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\cs basic\\giohang.cs",
+              "RelativeToolTip": "index\\cs basic\\giohang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:59:36.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cartDatabase.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\dataBaseAccess\\cartDatabase.cs",
+              "RelativeDocumentMoniker": "index\\dataBaseAccess\\cartDatabase.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\dataBaseAccess\\cartDatabase.cs",
+              "RelativeToolTip": "index\\dataBaseAccess\\cartDatabase.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAASwGYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:55:55.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "connect.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\dataBaseAccess\\connect.cs",
+              "RelativeDocumentMoniker": "index\\dataBaseAccess\\connect.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\dataBaseAccess\\connect.cs",
+              "RelativeToolTip": "index\\dataBaseAccess\\connect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:45:26.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "hienthigiohang.aspx.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\hienthigiohang.aspx.cs",
+              "RelativeDocumentMoniker": "index\\hienthigiohang.aspx.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\hienthigiohang.aspx.cs",
+              "RelativeToolTip": "index\\hienthigiohang.aspx.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAASwIUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:42:53.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "hienthigiohang.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\hienthigiohang.aspx",
+              "RelativeDocumentMoniker": "index\\hienthigiohang.aspx",
+              "ToolTip": "D:\\btlweb2\\index\\index\\hienthigiohang.aspx",
+              "RelativeToolTip": "index\\hienthigiohang.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T17:22:55.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "danhsachsanpham.aspx.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\danhsachsanpham.aspx.cs",
+              "RelativeDocumentMoniker": "index\\danhsachsanpham.aspx.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\danhsachsanpham.aspx.cs",
+              "RelativeToolTip": "index\\danhsachsanpham.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:18:26.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "danhsachsanpham.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\danhsachsanpham.aspx",
+              "RelativeDocumentMoniker": "index\\danhsachsanpham.aspx",
+              "ToolTip": "D:\\btlweb2\\index\\index\\danhsachsanpham.aspx",
+              "RelativeToolTip": "index\\danhsachsanpham.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T17:18:19.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "index.Master",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\index.Master",
+              "RelativeDocumentMoniker": "index\\index.Master",
+              "ToolTip": "D:\\btlweb2\\index\\index\\index.Master",
+              "RelativeToolTip": "index\\index.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T17:15:40.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dienthoai.aspx.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\dienthoai.aspx.cs",
+              "RelativeDocumentMoniker": "index\\dienthoai.aspx.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\dienthoai.aspx.cs",
+              "RelativeToolTip": "index\\dienthoai.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:11:53.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "dienthoai.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\dienthoai.aspx",
+              "RelativeDocumentMoniker": "index\\dienthoai.aspx",
+              "ToolTip": "D:\\btlweb2\\index\\index\\dienthoai.aspx",
+              "RelativeToolTip": "index\\dienthoai.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T17:11:51.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "default.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\default.aspx",
+              "RelativeDocumentMoniker": "index\\default.aspx",
+              "ToolTip": "D:\\btlweb2\\index\\index\\default.aspx",
+              "RelativeToolTip": "index\\default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T17:10:26.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "phukien.aspx.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\phukien.aspx.cs",
+              "RelativeDocumentMoniker": "index\\phukien.aspx.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\phukien.aspx.cs",
+              "RelativeToolTip": "index\\phukien.aspx.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAjwCUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:07:46.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "phukien.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\phukien.aspx",
+              "RelativeDocumentMoniker": "index\\phukien.aspx",
+              "ToolTip": "D:\\btlweb2\\index\\index\\phukien.aspx",
+              "RelativeToolTip": "index\\phukien.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T17:07:45.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "laptop.aspx.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\laptop.aspx.cs",
+              "RelativeDocumentMoniker": "index\\laptop.aspx.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\laptop.aspx.cs",
+              "RelativeToolTip": "index\\laptop.aspx.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:07:31.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "laptop.aspx",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\laptop.aspx",
+              "RelativeDocumentMoniker": "index\\laptop.aspx",
+              "ToolTip": "D:\\btlweb2\\index\\index\\laptop.aspx",
+              "RelativeToolTip": "index\\laptop.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-18T17:07:30.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "default.aspx.cs",
+              "DocumentMoniker": "D:\\btlweb2\\index\\index\\default.aspx.cs",
+              "RelativeDocumentMoniker": "index\\default.aspx.cs",
+              "ToolTip": "D:\\btlweb2\\index\\index\\default.aspx.cs",
+              "RelativeToolTip": "index\\default.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:10:30.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

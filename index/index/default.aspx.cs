@@ -56,17 +56,17 @@ namespace index
             var dienThoai = products.Where(p => {
                 int phanLoai;
                 return int.TryParse(p.PhanLoai, out phanLoai) && phanLoai == 1;
-            }).Take(12).ToList();
+            }).Take(6).ToList();
 
             var laptops = products.Where(p => {
                 int phanLoai;
                 return int.TryParse(p.PhanLoai, out phanLoai) && phanLoai == 2;
-            }).Take(12).ToList();
+            }).Take(6).ToList();
 
             var phuKien = products.Where(p => {
                 int phanLoai;
                 return int.TryParse(p.PhanLoai, out phanLoai) && phanLoai == 3;
-            }).Take(12).ToList();
+            }).Take(6).ToList();
 
             // Liên kết dữ liệu vào từng Repeater
             RepeaterPhones.DataSource = dienThoai;

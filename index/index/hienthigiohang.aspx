@@ -46,28 +46,30 @@
                     </div>
                 </FooterTemplate>
             </asp:Repeater>
-
+           
         </div>
                  
         <div class="cart-right">
             <div class="customer-info">
-                <h3>Thông Tin Khách Hàng</h3>
+                <h3>Thông tin khách hàng</h3>
                 <label for="name">Họ và tên</label>
-                <input type="text" id="name" placeholder="Nhập họ và tên">
+                <asp:TextBox ID="name" runat="server" Height="34px" Width="309px"></asp:TextBox>
 
                 <label for="email">Email</label>
                 
                 
-                <input type="email" id="email" placeholder="Nhập email">
+                <asp:TextBox ID="emaill" runat="server" Height="34px" Width="309px"></asp:TextBox>
 
                 <label for="phone">Số điện thoại</label>
-                <input type="tel" id="phone" placeholder="Nhập số điện thoại">
+                <asp:TextBox ID="phone" runat="server" Height="34px" Width="309px"></asp:TextBox>
 
                 <label for="address">Địa chỉ giao hàng</label>
-                <input type="text" id="address" placeholder="Nhập địa chỉ giao hàng">
-
+                <asp:TextBox ID="address" runat="server" Height="34px" Width="309px"></asp:TextBox>
+                <label for="txtKM">Khuyến mãi</label>
+                 <asp:TextBox ID="txtKM" runat="server" Height="34px" Width="205px"></asp:TextBox>
+                <asp:Button ID="btn_apdung" runat="server" Text="Áp dụng" Height="39px" OnClick="btn_apdung_Click" Width="100px" />
                 
-                <asp:Button ID="btnmua" runat="server" Text="Mua ngay" CssClass="btn-add-to-cart" />
+                <asp:Button ID="btnmua" runat="server" Text="Đặt hàng" CssClass="btn-add-to-cart" OnClick="btnmua_Click" />
             </div>
         </div>
     </div>

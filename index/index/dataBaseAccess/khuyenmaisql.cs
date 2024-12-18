@@ -123,5 +123,25 @@ namespace index.dataBaseAccess
             conn.dongKetNoi();
 
         }
+        public decimal layMucGiamGia(string maKM)
+        {
+            conn.moKetNoi(); // Mở kết nối SQL
+            string sql = @"select MucGiamGia from tbl_khuyenmai where MaKhuyenMai=@makm";
+            SqlCommand cmd = new SqlCommand(sql, conn.SQLConn);
+            cmd.Parameters.AddWithValue("@makm", maKM);
+
+            // Sử dụng ExecuteScalar để lấy giá trị đầu tiên trong kết quả truy vấn
+            object result = cmd.ExecuteScalar();
+
+            // Kiểm tra nếu không có kết quả trả về thì mặc định giá trị là 0
+            if (result == null || result == DBNull.Value)
+            {
+                return 0;
+            }
+
+            // Chuyển đổi kết quả sang kiểu decimal và trả về
+            return Convert.ToDecimal(result);
+        }
+
     }
 }

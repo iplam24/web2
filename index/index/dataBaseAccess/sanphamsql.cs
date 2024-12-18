@@ -384,6 +384,42 @@ namespace index.cs_sql
             return giaBan;
         }
 
+        public List<sanpham> timKiemSanPham(string aaa)
+        {
+            List<sanpham> dssp = new List<sanpham>();
+            conn.moKetNoi();
+            string sql = @"select* from tbl_sanpham where TenSP like @ten";
+            SqlCommand cmd = new SqlCommand(sql,conn.SQLConn);
+            cmd.Parameters.AddWithValue("@ten","%"+aaa+"%");
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                sanpham product = new sanpham
+                {
+                    MaSP = reader["MaSP"].ToString(),
+                    TenSP = reader["TenSP"].ToString(),
+                    TenHang = reader["TenHang"].ToString(),
+                    NgayPhatHanh = reader["NgayPhatHanh"].ToString(),
+                    KichThuocMan = reader["KichThuocMan"].ToString(),
+                    Chip = reader["Chip"].ToString(),
+                    Ram = reader["Ram"].ToString(),
+                    BoNho = reader["BoNho"].ToString(),
+                    DungLuongPin = reader["DungLuongPin"].ToString(),
+                    HeDieuHanh = reader["HeDieuHanh"].ToString(),
+                    TrongLuong = reader["TrongLuong"].ToString(),
+                    GiaNhap = reader["GiaNhap"].ToString(),
+                    GiaBan = reader["GiaBan"].ToString(),
+                    MauSac = reader["MauSac"].ToString(),
+                    MoTa = reader["MoTa"].ToString(),
+                    HinhAnh1 = reader["HinhAnh1"].ToString(),
+                    HinhAnh2 = reader["HinhAnh2"].ToString(),
+                    HinhAnh3 = reader["HinhAnh3"].ToString(),
+                    PhanLoai = reader["PhanLoai"].ToString()
+                };
+                dssp.Add(product);
 
+            }
+            return dssp;
+        }
     }
 }

@@ -47,8 +47,9 @@
                </div>
                <h1 class="header-title">Điện thoại chính hãng</h1>
                <div class="header-search">
-                   <input type="text" placeholder="Tìm kiếm ...." class="search-input">
-                   <button class="search-btn">Tìm kiếm</button>
+                   
+                   <asp:TextBox ID="txt_timkiem" runat="server" CssClass="search-input"></asp:TextBox>
+                   <asp:Button ID="btn_timkiem" runat="server" CssClass="search-btn" Text="Tìm kiếm" OnClick="btn_timkiem_Click" />
                </div>
                <div class="header-options">
                     
@@ -71,9 +72,9 @@
            <nav class="header-nav">
                <ul class="nav-menu">
                    <li><a href="default.aspx">Trang Chủ</a></li>
-                   <li><a href="/product">Điện thoại</a></li>
-                   <li><a href="/Laptops">Laptop</a></li>
-                   <li><a href="/accesories">Phụ Kiện</a></li>
+                   <li><a href="dienthoai.aspx">Điện thoại</a></li>
+                   <li><a href="laptop.aspx">Laptop</a></li>
+                   <li><a href="phukien.aspx">Phụ Kiện</a></li>
                    <li><a href="khuyenmai.aspx">Khuyến Mãi</a></li>
                    <li><a href="lienhe.aspx">Liên Hệ</a></li>
                </ul>

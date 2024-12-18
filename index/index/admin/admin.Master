@@ -33,6 +33,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="khuyenmai.aspx"><i class="fa-solid fa-gear" style="color: #ffffff;"></i> Khuyến mãi</a>
             </li>
+             <li class="nav-item">
+            <a class="nav-link" href="donhang.aspx"><i class="fa-solid fa-gear" style="color: #ffffff;"></i> Đơn hàng</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="../dangxuat.aspx"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> Đăng xuất</a>
             </li>
